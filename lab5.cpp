@@ -17,17 +17,17 @@ void newLine();
 int main(){
     Student stud;
    	float sum, average;
-    cout << "Enter student records: \n";
-    cout << "ID: ";
-    cin >> stud.id;
-    newLine();
-    cout << "First Name: ";
-    cin.getline(stud.name.firstName, 29);
-    cout << "Last Name: ";
-    cin.getline(stud.name.lastName, 29);
+		cout << "Enter student records: \n";
+		cout << "ID: ";
+			cin >> stud.id;
+	newLine();
+		cout << "First Name: ";
+			cin.getline(stud.name.firstName, 29);
+		cout << "Last Name: ";
+			cin.getline(stud.name.lastName, 29);
     for(int i=1; i<4; i++){
         cout << "Grade "<< i << ": ";
-        cin >> stud.grade[i];        
+        	cin >> stud.grade[i];        
     }
     
     cout << "\n\n";
@@ -36,10 +36,10 @@ int main(){
     cout << "First Name: " << stud.name.firstName << endl;
     cout << "Last Name: " << stud.name.lastName << endl;
     for(int i=1; i<4; i++){
-   		sum=sum+stud.grade[i];
+		sum=sum+stud.grade[i];
     }
-  	  average= sum/3;
-    cout << "Grade "<< ": " << average << endl;  
+		average= sum/3;
+		cout << "Grade "<< ": " << average << endl;  
     
     if (average>74){
     	cout<<"Remark: Passed";
